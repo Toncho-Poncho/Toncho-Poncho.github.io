@@ -1,5 +1,5 @@
 /Img/BlackHole.jpg
 
-/Img/Cube.jpg
+/Img/Cube.png
 
 /Img/Experiment.jpg

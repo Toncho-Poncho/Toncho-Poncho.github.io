@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #eedbc8;
+  background-color: #faf5d8;
   color: #100f24;
   height: 100vh; /* Full viewport height */
   display: flex;
@@ -53,7 +53,7 @@ h3 {
 .media-container {
   position: relative;
   flex: 0 0 80%; /* Take up 80% of the width */
-  background-color: #eedbc8;
+  background-color: #faf5d8;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -75,12 +75,12 @@ h3 {
 }
 
 .media-container::-webkit-scrollbar-thumb {
-  background-color: #eedbc8; /* Color of the scrollbar thumb */
+  background-color: #faf5d8; /* Color of the scrollbar thumb */
   border-radius: 2px; /* Roundness of the scrollbar thumb */
 }
 
 .media-container::-webkit-scrollbar-thumb:hover {
-  background-color: #eedbc8; /* Hover color of the scrollbar thumb */
+  background-color: #faf5d8; /* Hover color of the scrollbar thumb */
 }
 
 .info-container::-webkit-scrollbar {
@@ -199,7 +199,7 @@ hr {
 .link-button:hover {
   opacity: 1;
   color: #97b34e;
-  background-color: #eedbc8;
+  background-color: #faf5d8;
 }
 
 
@@ -226,7 +226,7 @@ hr {
 }  
 
 .slider-line {
-  background: #eedbc8 !important; /* или нужный цвет */
+  background: #faf5d8 !important; /* или нужный цвет */
 }
 
 /* Responsive Design */

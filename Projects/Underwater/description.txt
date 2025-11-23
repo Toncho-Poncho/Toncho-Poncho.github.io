@@ -4,6 +4,6 @@ A surreal dive into a synthetic abyss, this series visualizes a vast digital oce
 ---
 Blender, Photoshop
 ---
-/Projects/Underwater/Img/Cube.jpg
+/Projects/Underwater/Img/Cube.png
 ---
 Underwater.html

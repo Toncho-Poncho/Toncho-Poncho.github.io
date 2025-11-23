@@ -19,7 +19,7 @@
 }
 
 .triangle-icon, .material-icon, .engine-icon, .size-icon, .td-icon, .workflow-icon, .collab-icon {
-  color: #eedbc8; /* Pastel green */
+  color: #faf5d8; /* Pastel green */
 }
 
 .stat strong {
@@ -29,7 +29,7 @@
 
 .stat-info-icon {
   margin-left: 5px;
-  color: #eedbc8;
+  color: #faf5d8;
   cursor: pointer;
   position: relative;
 }
