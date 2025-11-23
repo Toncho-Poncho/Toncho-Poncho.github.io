@@ -19,7 +19,7 @@
 }
 
 .triangle-icon, .material-icon, .engine-icon, .size-icon, .td-icon, .workflow-icon, .collab-icon {
-  color: #e0e0e0; /* Pastel green */
+  color: #eedbc8; /* Pastel green */
 }
 
 .stat strong {
@@ -29,13 +29,13 @@
 
 .stat-info-icon {
   margin-left: 5px;
-  color: #e0e0e0;
+  color: #eedbc8;
   cursor: pointer;
   position: relative;
 }
 
 .stat-info-icon:hover {
-  color: #ff4bff;
+  color: #97b34e;
 }
 
 .tooltip {

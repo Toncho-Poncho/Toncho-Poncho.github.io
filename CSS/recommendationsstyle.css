@@ -48,7 +48,7 @@
 }
 
 .recommendations-panel {
-    background-color: #e0e0e0;
+    background-color: #eedbc8;
     border-radius: 5px;
     padding: 10px;
     flex: 1;
@@ -62,7 +62,7 @@
 .recommendation h2 {
     font-size: 20px;
     margin: 0;
-    color: #ff8000;
+    color: #97b34e;
 }
 
 .recommendation h3 {
@@ -78,7 +78,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 5px 0;
-    color: #00b400;
+    color: #97b34e;
 }
 
 .recommendation-quote {
@@ -97,14 +97,14 @@
 .dot {
     height: 10px;
     width: 10px;
-    background-color: #1f1f1f;
+    background-color: #100f24;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
 }
 
 .dot.active {
-    background-color: #0080ff;
+    background-color: #97b34e;
 }
 
 @media (max-width: 600px) {

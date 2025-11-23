@@ -20,14 +20,14 @@
 }
 
 .user-name-link:hover {
-  color: #00b400; /* Example hover color */
+  color: #97b34e; /* Example hover color */
 }
 
 .user-info-panel h1 {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 5px;
-  color: #00b400;
+  color: #97b34e;
 }
 
 .profile-pic {
@@ -49,26 +49,26 @@
 }
 
 .social-icons a {
-  color: #1f1f1f !important;
+  color: #100f24 !important;
   font-size: 24px;
   transition: color 0.3s ease;
 }
 
 /* Меняем цвет при наведении в зависимости от позиции */
 .social-icons a:nth-child(4n + 1):hover {
-  color: #ff4bff !important;
+  color: #97b34e !important;
 }
 
 .social-icons a:nth-child(4n + 2):hover {
-  color: #00b400 !important;
+  color: #97b34e !important;
 }
 
 .social-icons a:nth-child(4n + 3):hover {
-  color: #0080ff !important;
+  color: #97b34e !important;
 }
 
 .social-icons a:nth-child(4n + 4):hover {
-  color: #ff8000 !important;
+  color: #97b34e !important;
 }
 
 

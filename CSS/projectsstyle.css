@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e0e0e0;
-  color: #1f1f1f;
+  background-color: #eedbc8;
+  color: #100f24;
   height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@ h3 {
 .media-container {
   position: relative;
   flex: 0 0 80%; /* Take up 80% of the width */
-  background-color: #e0e0e0;
+  background-color: #eedbc8;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -75,12 +75,12 @@ h3 {
 }
 
 .media-container::-webkit-scrollbar-thumb {
-  background-color: #e0e0e0; /* Color of the scrollbar thumb */
+  background-color: #eedbc8; /* Color of the scrollbar thumb */
   border-radius: 2px; /* Roundness of the scrollbar thumb */
 }
 
 .media-container::-webkit-scrollbar-thumb:hover {
-  background-color: #e0e0e0; /* Hover color of the scrollbar thumb */
+  background-color: #eedbc8; /* Hover color of the scrollbar thumb */
 }
 
 .info-container::-webkit-scrollbar {
@@ -118,7 +118,7 @@ h3 {
   color: white;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
-  color: #1f1f1f;
+  color: #100f24;
   font-weight: 400;
 }
 
@@ -185,7 +185,7 @@ hr {
 .link-button {
   display: inline-block;
     color: rgb(20, 20, 20);
-    background-color: #0080ff;
+    background-color: #97b34e;
     padding: 0 10px;
     border-radius: 2px;
     cursor: pointer;
@@ -198,8 +198,8 @@ hr {
 
 .link-button:hover {
   opacity: 1;
-  color: #ff4bff;
-  background-color: #e0e0e0;
+  color: #97b34e;
+  background-color: #eedbc8;
 }
 
 
@@ -226,7 +226,7 @@ hr {
 }  
 
 .slider-line {
-  background: #e0e0e0 !important; /* или нужный цвет */
+  background: #eedbc8 !important; /* или нужный цвет */
 }
 
 /* Responsive Design */

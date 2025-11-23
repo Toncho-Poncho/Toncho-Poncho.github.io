@@ -1,5 +1,5 @@
 .skills-panel {
-    background-color: #e0e0e0;
+    background-color: #eedbc8;
     border-radius: 5px;
     padding: 10px;
     flex: 1;
@@ -35,23 +35,23 @@
 }
 
 .software-tag:nth-child(4n + 1) {
-    background-color: #ff4bff;
+    background-color: #97b34e;
 }
 
 .software-tag:nth-child(4n + 2) {
-    background-color: #00b400;
+    background-color: #97b34e;
 }
 
 .software-tag:nth-child(4n + 3) {
-    background-color: #0080ff;
+    background-color: #97b34e;
 }
 
 .software-tag:nth-child(4n + 4) {
-    background-color: #ff8000;
+    background-color: #97b34e;
 }
 
 .software-tag {
-    color: #1f1f1f;
+    color: #100f24;
     padding: 5px 10px;
     border-radius: .25em;
     font-size: 14px;

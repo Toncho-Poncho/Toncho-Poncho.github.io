@@ -1,7 +1,7 @@
 #toggle-description {
     display: inline-block;
     color: grey;
-    background-color: #e0e0e0;
+    background-color: #eedbc8;
     padding: 2px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -14,7 +14,7 @@
   
   #toggle-description:hover {
     opacity: 1;
-    color: #00b400;
-    background-color: #1f1f1f;
+    color: #97b34e;
+    background-color: #100f24;
   }
   
