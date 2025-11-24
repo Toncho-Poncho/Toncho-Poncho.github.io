@@ -13,7 +13,7 @@ html, body {
 
 body {
     font-family: Montserrat, sans-serif;
-    background-color: #faf5d8;
+    background-color: #ffffff;
     color: #100f24;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     padding-top: 10px;
-    border-bottom: 1px solid #faf5d8;
+    border-bottom: 1px solid #ffffff;
 }
 
 hr {
@@ -76,7 +76,7 @@ hr {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #faf5d8;
+    background-color: #ffffff;
     width: 100%;
     gap: 10px;
     border-radius: 5px;
@@ -126,7 +126,7 @@ p {
 }
 
 .nav-button.active, .nav-button:hover {
-    background-color: #faf5d8;
+    background-color: #ffffff;
     color: #97b34e;
 }
 
@@ -147,7 +147,7 @@ p {
 
     .top-container {
         padding-top: 10px;
-        border-bottom: 1px solid #faf5d8;
+        border-bottom: 1px solid #ffffff;
     }
 
     .bottom-container {

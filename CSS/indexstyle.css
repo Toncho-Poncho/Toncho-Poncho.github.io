@@ -28,7 +28,7 @@ html, body {
 
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #faf5d8;
+  background-color: #ffffff;
   color: #100f24;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #faf5d8;
+  border-bottom: 1px solid #ffffff;
 }
 
 .navigation-buttons {
@@ -104,7 +104,7 @@ h2 {
 }
 
 .nav-button.active, .nav-button:hover {
-  background-color: #faf5d8;
+  background-color: #ffffff;
   color: #97b34e;
 }
 
@@ -113,7 +113,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: #faf5d8;
+  background-color: #ffffff;
   border-radius: 5px;
   width: 100%;
   margin-top: 0; /* No margin at the top */
@@ -152,7 +152,7 @@ h2 {
 
   .top-container {
       padding-top: 5px; /* Adjust padding for mobile */
-      border-bottom: 1px solid #faf5d8;
+      border-bottom: 1px solid #ffffff;
   }
 
   .navigation-buttons {
@@ -168,7 +168,7 @@ h2 {
 }
 
   .bottom-container {
-      background-color: #faf5d8;
+      background-color: #ffffff;
       padding: 8px; /* Adjust padding for mobile */
       border-radius: 5px; /* Maintain border radius for consistent look */
       margin-top: 0; /* Add margin at the top for spacing */
