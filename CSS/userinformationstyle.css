@@ -1,4 +1,4 @@
-/* User Information Styles */
+/* Контейнер (если где-то используется) */
 .user-info-container {
   display: flex;
   justify-content: center;
@@ -6,38 +6,69 @@
   width: 100%;
 }
 
+/* === ОСНОВНОЙ БЛОК С ИНФОЙ О ПОЛЬЗОВАТЕЛЕ === */
 .user-info-panel {
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) auto;
+  column-gap: 32px;
+  row-gap: 6px;
   align-items: center;
-  text-align: center;
+
+  text-align: left;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 0;   /* ← тот же 20px, что и у #thumbnail-container */
 }
 
+
+
+/* Ссылка-обёртка имени, на всякий случай оставляем */
 .user-name-link {
   text-decoration: none;
   color: inherit;
 }
 
 .user-name-link:hover {
-  color: #97b34e; /* Example hover color */
+  color: #97b34e;
 }
 
+/* Ник */
 .user-info-panel h1 {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 5px;
   color: #97b34e;
+  grid-column: 1 / 2;
 }
 
+/* Подзаголовок (Antonina (3D Artist)) */
+.user-info-panel h2 {
+  font-size: 16px;
+  margin: 0;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  grid-column: 1 / 2;
+}
+
+/* Аватар справа */
 .profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 10px;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 5;       /* занимает несколько строк по высоте текста */
+  justify-self: end;
+
+  margin-bottom: 0;
 }
 
-/* Social Icons Styles */
+/* === СОЦСЕТИ === */
 .social-icons {
   display: flex;
   gap: 1rem;
@@ -45,7 +76,9 @@
   transition: opacity 0.5s;
   margin-bottom: 10px;
   margin-top: 5px;
-  color: grey !important; 
+  color: grey !important;
+
+  grid-column: 1 / 2;    /* в левом столбце */
 }
 
 .social-icons a {
@@ -54,36 +87,41 @@
   transition: color 0.3s ease;
 }
 
-/* Меняем цвет при наведении в зависимости от позиции */
-.social-icons a:nth-child(4n + 1):hover {
+/* Один и тот же цвет при hover – твой зелёный */
+.social-icons a:hover {
   color: #97b34e !important;
 }
 
-.social-icons a:nth-child(4n + 2):hover {
-  color: #97b34e !important;
-}
-
-.social-icons a:nth-child(4n + 3):hover {
-  color: #97b34e !important;
-}
-
-.social-icons a:nth-child(4n + 4):hover {
-  color: #97b34e !important;
-}
-
-
+/* === ЛОКАЦИЯ === */
 .user-location-container {
   display: flex;
   margin-top: 5px;
   align-items: center;
-  gap: 5px; /* Adjust the gap between the icon and the text */
+  gap: 5px;
+  grid-column: 1 / 2;
 }
 
 .material-symbols-outlined {
-  font-size: 1.2em; /* Adjust the size of the icon */
-  color: grey !important; 
+  font-size: 1.2em;
+  color: grey !important;
 }
 
 .user-location-container h2 {
   margin: 0;
 }
+
+/* === ТАБЫ Portfolio / About – тоже в левом столбце === */
+.navigation-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+
+  margin: 10px -10px 0;  /* никаких auto и контейнеров внутри контейнера */
+}
+
+
+
+
+
+
+/* сами .nav-button стилизуются в indexstyle.css / aboutstyle.css */
