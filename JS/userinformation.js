@@ -15,15 +15,13 @@ function addUserInformation() {
             const lines = data.split('\n').map(line => line.trim());
             const [profilePicUrl, profileName, profileRole, location, ...socials] = lines;
 
-            // Get the container where the user info should be added
-            const container = document.querySelector('.top-container'); // Select the specific container
+            // Находим существующую панель из index.html
+            const userInfoPanel = document.querySelector('.user-info-panel');
+            if (!userInfoPanel) return;
 
-            // Create a document fragment for better performance
-            const fragment = document.createDocumentFragment();
+            // Очищаем перед вставкой данных
+            userInfoPanel.innerHTML = '';
 
-            // Create the user info panel
-            const userInfoPanel = document.createElement("div");
-            userInfoPanel.className = "user-info-panel";
 
             // Create and append the image
             const img = document.createElement("img");
@@ -139,12 +137,6 @@ function addUserInformation() {
                     socialIcons.appendChild(a);
                 }
             });
-
-            // Append the user info panel to the fragment
-            fragment.appendChild(userInfoPanel);
-
-            // Append the fragment to the container
-            container.appendChild(fragment);
 
             
         })
