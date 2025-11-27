@@ -81,7 +81,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 45px; /* ← Добавили пространство сверху */
+  margin-top: 30px; /* ← Добавили пространство сверху */
 }
 
 
@@ -89,16 +89,10 @@ h2 {
 .navigation-buttons {
   display: flex;
   gap: 0.5rem;
-
-  /* такие же размеры и отступы, как у .user-info-panel */
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 8px auto 0;
-
-  /* кнопки идут слева, как текст */
   justify-content: flex-start;
+  margin-top: 8px;
 }
+
 
 
 
@@ -127,23 +121,38 @@ h2 {
 .bottom-container {
   flex: 1;
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  flex-direction: column;  /* ← важно */
+  align-items: center;     /* колонка по центру, как и всё остальное */
+
+  padding: 30px 0;
   background-color: #ffffff;
   border-radius: 5px;
   width: 100%;
-  margin-top: 0; /* No margin at the top */
+  margin-top: 0;
 }
 
 
-/* подпись автора внизу главной (стили как у h2) */
+
+
+
 .site-credit {
-  text-align: center;
-  margin: 24px 0 16px;
-  font: 50 14px 'Poppins', sans-serif;  /* как твои h2 */
-  color: grey;                            /* как у h2 */
+  max-width: 1200px;      /* та же ширина колонкой, что и сверху */
+  width: 100%;
+  padding: 0 20px;        /* тот же левый отступ 20px */
+  margin: 75px auto 5px; /* колонка по центру страницы */
+
+  text-align: left;       /* текст внутри прижат к левому краю колонки */
+  font: 50 14px 'Poppins', sans-serif;
+  color: grey;
   user-select: none;
 }
+
+
+
+
+
+
+
 
 
 @media (max-width: 600px) {
