@@ -189,13 +189,12 @@ h2 {
 .nav-button {
     font-size: 14px; /* Adjust font size for navigation buttons on mobile */
     padding: 8px; /* Reduce padding for better fit on mobile */
-    margin-right: 0; /* Remove margin for better fit on mobile */
     border-radius: .5em .5em 0 0; /* Adjust border radius for better look on mobile */
 }
 
   .bottom-container {
       background-color: #ffffff;
-      padding: 15px 0;  /* стало: только сверху/снизу, без слева/справа */
+      padding: 30px 0;  /* стало: только сверху/снизу, без слева/справа */
       border-radius: 5px;
       margin-top: 0;
   }
