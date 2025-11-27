@@ -195,8 +195,9 @@ h2 {
 
   .bottom-container {
       background-color: #ffffff;
-      padding: 8px; /* Adjust padding for mobile */
-      border-radius: 5px; /* Maintain border radius for consistent look */
-      margin-top: 0; /* Add margin at the top for spacing */
+      padding: 8px 0;  /* стало: только сверху/снизу, без слева/справа */
+      border-radius: 5px;
+      margin-top: 0;
   }
+
 }
