@@ -177,7 +177,7 @@ h2 {
   }
 
   .top-container {
-      padding-top: 5px; /* Adjust padding for mobile */
+      padding-top: 0px; /* Adjust padding for mobile */
       border-bottom: 1px solid #ffffff;
   }
 
@@ -187,7 +187,7 @@ h2 {
 }
 
 .nav-button {
-    font-size: 14px; /* Adjust font size for navigation buttons on mobile */
+    font-size: 12px; /* Adjust font size for navigation buttons on mobile */
     padding: 8px; /* Reduce padding for better fit on mobile */
     border-radius: .5em .5em 0 0; /* Adjust border radius for better look on mobile */
 }
