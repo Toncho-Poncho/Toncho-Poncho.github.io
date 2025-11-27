@@ -161,14 +161,15 @@ h2 {
   }
   
   h1 {
-      font-size: 18px; /* Adjust font size for mobile */
-      text-align: center; /* Center align text for better readability on mobile */
+      font-size: 18px;
+      text-align: left;   /* или просто удали строку text-align */
   }
 
   h2 {
-      font-size: 14px; /* Adjust font size for mobile */
-      text-align: center; /* Center align text for better readability on mobile */
+      font-size: 14px;
+      text-align: left;   /* то же самое */
   }
+
 
   .main-container {
       overflow-y: auto; /* Ensure main container scrolls if necessary */
