@@ -112,17 +112,16 @@
   color: #97b34e !important;
 }
 
-/* Аватар справа: занимает обе строки (текст + навигация) */
+/* Аватар справа: не растягиваем, просто квадрат 150×150 */
 .profile-pic {
   grid-column: 2 / 3;
-  grid-row: 1 / 3;          /* тянется от ника до навигации */
+  grid-row: 1 / 3;
   justify-self: center;
-  align-self: stretch;      /* растягиваем по высоте всей панели */
+  align-self: center;        /* центр по высоте, не тянем */
 
-  width: auto;
-  max-width: 150px;
-  height: 100%;
-  aspect-ratio: 1 / 1;
+  width: 150px;
+  height: 150px;             /* фиксированный квадрат */
   object-fit: cover;
   border-radius: 50%;
 }
+
