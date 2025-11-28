@@ -138,8 +138,8 @@ h2 {
 .site-credit {
   max-width: 1200px;      /* та же ширина колонкой, что и сверху */
   width: 100%;
-  padding: 0 20px;        /* тот же левый отступ 20px */
-  margin: 75px auto 5px; /* колонка по центру страницы */
+  padding: 0 30px;        /* тот же левый отступ 20px */
+  margin: 75px auto 0px; /* колонка по центру страницы */
 
   text-align: left;       /* текст внутри прижат к левому краю колонки */
   font: 50 14px 'Poppins', sans-serif;
@@ -170,7 +170,6 @@ h2 {
       text-align: left;   /* то же самое */
   }
 
-
   .main-container {
       overflow-y: auto; /* Ensure main container scrolls if necessary */
       padding-top: 20px;/* Add padding for better spacing on mobile */
@@ -181,6 +180,19 @@ h2 {
       border-bottom: 1px solid #ffffff;
   }
 
+  .user-info-panel {
+      padding: 0 20px !important;
+  }
+
+  #thumbnail-container {
+      padding: 0 20px !important;
+      gap: 20px !important;
+  }
+
+  .site-credit {
+      padding: 0 20px !important;
+  }
+  
   .navigation-buttons {
     flex-direction: row; /* Stack navigation buttons vertically on mobile */
     gap: 0.5rem; /* Adjust gap for better spacing on mobile */

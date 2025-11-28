@@ -9,7 +9,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px 20px;      /* было 100px – меньше пустоты под гридом */
+  padding: 0 30px 30px;      /* было 100px – меньше пустоты под гридом */
 }
 
 
