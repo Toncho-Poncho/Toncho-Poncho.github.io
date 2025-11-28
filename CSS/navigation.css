@@ -1,4 +1,4 @@
-.nav-button {
+.project-nav-button {
   background-color: #ffffff;
   border: none;
   border-radius: 0.1em;
@@ -14,31 +14,31 @@
   transition: opacity 0.3s;
 }
 
-.nav-button:hover {
+.project-nav-button:hover {
   opacity: 1;
 }
 
 #prev-project {
-  left: calc((100vw - 100%) / 2 + 10px); /* Adjust to the left within media-container */
+  left: calc((100vw - 100%) / 2 + 10px);
 }
 
 #next-project {
-  right: calc((100vw - 60%) / 2 + 15px); /* Adjust to the right within media-container */
+  right: calc((100vw - 60%) / 2 + 15px);
 }
 
-/* Responsive Design for Navigation Buttons */
 @media (max-width: 600px) {
-  .nav-button {
-      font-size: 18px; /* Smaller font size for mobile */
-      padding: 8px; /* Smaller padding for mobile */
+  .project-nav-button {
+      font-size: 18px;
+      padding: 8px;
       opacity: 0.5;
   }
 
   #prev-project {
-      left: 10px; /* Keep the button at the center */
+      left: 10px;
   }
 
   #next-project {
-      right: 10px; /* Keep the button at the center */
+      right: 10px;
   }
 }
+

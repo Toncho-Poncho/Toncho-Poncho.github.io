@@ -124,11 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             const mediaContainer = document.getElementById("project-media");
         
-            // Прячем и показываем, чтобы форсировать рендеринг
-            mediaContainer.style.display = "none";
+
             requestAnimationFrame(() => {
-                mediaContainer.style.display = "block";
-        
                 // 🔹 ФОРСИРУЕМ ОБНОВЛЕНИЕ СТИЛЕЙ 🔹
                 document.querySelectorAll("#project-media img").forEach((img) => {
                     img.style.width = "100%";  // Растягиваем изображение на всю ширину контейнера

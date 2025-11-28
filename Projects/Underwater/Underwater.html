@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="../CSS/userinformationstyle.css?v=1.0" />
+    <link rel="stylesheet" href="../../CSS/indexstyle.css?v=1.0" />
+    <link rel="stylesheet" href="../../CSS/userinformationstyle.css?v=1.0" />
     <link rel="stylesheet" href="../../CSS/main.css" />
     <link rel="icon" href="../../Resources/favicon/KolosFavicon.png" type="image/png" />
   </head>
   <body>
 
     <div class="top-container">
-      <div class="user-info-panel"></div>
+      <div class="user-info-panel">
+        <!-- Сюда userinformation.js подставит текст и аватар -->
+
+        <div class="navigation-buttons">
+          <a href="../../index.html" class="nav-button" id="nav-portfolio">Portfolio</a>
+          <a href="../../about.html" class="nav-button" id="nav-about">About</a>
+        </div>
+      </div>
     </div>
+
 
     <div class="container">
 
@@ -22,12 +31,12 @@
           <p id="project-description"></p>
         </div>
 
-        <hr />
+
 
         <h3>Software Used</h3>
         <div class="project-tags-container" id="project-tags"></div>
 
-        <hr />
+
 
         <div class="project-stats-container" id="project-stats"></div>
       </div>
@@ -35,13 +44,14 @@
       <div class="media-container">
         <div id="project-media"></div>
 
-        <button id="prev-project" class="nav-button" type="button" aria-label="Previous Project">
-          <i class="fa fa-chevron-left"></i>
-        </button>
+      <button id="prev-project" class="project-nav-button" type="button" aria-label="Previous Project">
+         <i class="fa fa-chevron-left"></i>
+      </button>
 
-        <button id="next-project" class="nav-button" type="button" aria-label="Next Project">
-          <i class="fa fa-chevron-right"></i>
-        </button>
+      <button id="next-project" class="project-nav-button" type="button" aria-label="Next Project">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+
 
         <button id="back-to-top" class="back-to-top-button" type="button" aria-label="back to the top">
           <i class="fa fa-arrow-up"></i>

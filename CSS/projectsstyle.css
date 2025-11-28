@@ -101,7 +101,7 @@ h3 {
 
 /* Top Container Styling */
 .top-container {
-  margin-top: 30px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +115,7 @@ h3 {
 .project-description-container h1 {
   font-size: 16px;
   margin: 0;
-  margin-bottom: 3px;
+  margin-top: 0px;
   color: white;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
@@ -130,6 +130,7 @@ h3 {
 
 .project-description-container p {
   font-size: 14px;
+  margin-top: 3px;
   margin-bottom: 12px;
   color: grey;
   font-family: 'Poppins', sans-serif;
@@ -255,7 +256,7 @@ hr {
 @media (max-width: 600px) {
 
   .info-container {
-    padding: 0 20px; /* было 30px */
+    padding: 0px 20px 0px; /* было 30px */
     max-width: 100%; /* перестаёт быть 1200px */
   }
 
@@ -267,12 +268,10 @@ hr {
     max-width: 100%; /* растягивается */
   }
 
-  .top-container {
-    margin-top: 20px; /* было 30px */
-  }
 
     #project-media img {
     margin-bottom: 20px; /* было 30px */
   }
+  
 
 }

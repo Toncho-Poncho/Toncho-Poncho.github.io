@@ -81,7 +81,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 30px; /* ← Добавили пространство сверху */
 }
 
 
@@ -124,7 +123,7 @@ h2 {
   flex-direction: column;  /* ← важно */
   align-items: center;     /* колонка по центру, как и всё остальное */
 
-  padding: 30px 0 0;
+  padding: 0 0 0;
   background-color: #ffffff;
   border-radius: 5px;
   width: 100%;
@@ -170,10 +169,6 @@ h2 {
       text-align: left;   /* то же самое */
   }
 
-  .main-container {
-      overflow-y: auto; /* Ensure main container scrolls if necessary */
-      padding-top: 20px;/* Add padding for better spacing on mobile */
-  }
 
   .top-container {
       margin-top: 0px;
@@ -181,11 +176,11 @@ h2 {
   }
 
   .user-info-panel {
-      padding: 0 20px !important;
+      padding: 20px 20px 20px !important;
   }
 
   #thumbnail-container {
-      padding: 0 20px !important;
+      padding: 0 20px 20px !important;
       gap: 20px !important;
   }
 
