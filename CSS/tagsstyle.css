@@ -2,16 +2,16 @@
 .project-tags-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  gap: 25px;
+  padding-left: 0px;
+  padding-bottom: 0px;
   padding-top: 10px;
 }
 
 .software-tag {
   background-color: #ffffff;
   color: darkgray;
-  padding: 5px 10px;
+  padding: 0px 0px;
   border-radius: 0.25em;
   font-size: 14px;
   -webkit-user-select: none; /* Safari */
