@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+/* Hide ALL scrollbars everywhere */
+* {
+    scrollbar-width: none;         /* Firefox */
+    -ms-overflow-style: none;      /* IE/Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none;                 /* Chrome/Safari/Opera */
+}
 
 
 /* Hide scrollbar for Chrome, Safari, and Opera */
