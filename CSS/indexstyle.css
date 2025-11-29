@@ -210,7 +210,7 @@ h2 {
 
   .bottom-container {
       background-color: #ffffff;
-      padding: 20px 0;  /* стало: только сверху/снизу, без слева/справа */
+      padding: 0px 0;  /* стало: только сверху/снизу, без слева/справа */
       border-radius: 5px;
   }
 

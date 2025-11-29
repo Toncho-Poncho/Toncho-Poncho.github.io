@@ -1,13 +1,13 @@
 .skills-panel {
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align items to the start (left) */
     text-align: left; /* Align text to the left */
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     -webkit-user-select: none; /* Safari */
     user-select: none;
 }
@@ -20,8 +20,8 @@
     display: flex;
     flex-direction: column; /* Keep the title on top and tags below */
     align-items: flex-start; /* Align items to the start (left) */
-    gap: 10px; /* Space between the title and the tag list */
-    padding: 10px;
+    gap: 0px; /* Space between the title and the tag list */
+    padding: 0px;
     border-radius: 5px;
     width: 100%; /* Ensure it takes full width of its parent */
 }
@@ -32,6 +32,7 @@
     justify-content: flex-start; /* Align items to the start (left) */
     gap: 10px;
     width: 100%;
+    padding: 0 0 30px;
 }
 
 .software-tag:nth-child(4n + 1) {
@@ -53,11 +54,17 @@
 .software-tag {
     color: #100f24;
     padding: 5px 10px;
-    border-radius: .25em;
+    border-radius: 1.0em;
     font-size: 14px;
     white-space: nowrap; /* Prevent tags from breaking into multiple lines */
 }
 
 hr {
     opacity: .05;
+}
+
+@media (max-width: 600px) {
+    .skills-panel .software-tag-container {
+        padding: 0px 0 20px;   /* ↓ стало 20px вместо 30px */
+    }
 }

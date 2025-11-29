@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const activeRecommendation = document.querySelector('.recommendation.active');
             if (activeRecommendation) {
                 const activeHeight = activeRecommendation.getBoundingClientRect().height;
-                recommendationContent.style.minHeight = `${activeHeight + 60}px`; // Add space for dots
+                recommendationContent.style.minHeight = `${activeHeight + 45}px`; // Add space for dots
             }
         }
 

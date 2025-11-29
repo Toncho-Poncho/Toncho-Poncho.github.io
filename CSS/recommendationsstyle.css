@@ -4,7 +4,6 @@
     flex-grow: 1;
     position: relative;
     width: 100%;
-    min-height: 350px;
     overflow: hidden;
 }
 
@@ -31,13 +30,13 @@
 .recommendation-header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .recommendation-avatar {
     width: 80px;
     height: 80px;
-    border-radius: 0.5em;
+    border-radius: 50%;
     margin-right: 15px;
 }
 
@@ -50,23 +49,23 @@
 .recommendations-panel {
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .recommendation h2 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     color: #97b34e;
 }
 
 .recommendation h3 {
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 0;
@@ -77,13 +76,13 @@
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    margin: 5px 0;
+    margin: 3px 0px 0px;
     color: #97b34e;
 }
 
 .recommendation-quote {
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 3px 0px 0px;
     color: grey;
     line-height: 1.5;
 }
@@ -91,7 +90,7 @@
 .recommendation-dots {
     display: flex;
     gap: 10px;
-    padding: 10px;
+    margin-bottom: 0px;
 }
 
 .dot {
@@ -108,135 +107,69 @@
 }
 
 @media (max-width: 600px) {
+    .recommendations-panel {
+        padding: 0 0 0;
+        align-items: flex-start;
+    }
+
     .recommendation-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 450px; /* Adjust the minimum height for mobile */
-        position: relative; /* Add relative positioning */
-        padding-bottom: 60px; /* Ensure enough space for dots */
+        position: relative;
+        min-height: 0;
+        padding-bottom: 0;
     }
 
     .recommendation {
-        transition: transform 0.5s ease, opacity 0.5s ease;
-        flex-grow: 1;
-        margin-bottom: 60px; /* Add margin to create space for dots */
-        position: absolute;
+        position: relative;
         width: 100%;
-        top: 0;
-        left: 0;
+        display: none;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        align-items: flex-start;
+        text-align: left;
     }
 
-    .recommendation-enter-left {
-        animation: slideInFromLeft 0.5s forwards;
+    .recommendation.active {
+        display: flex;
+        opacity: 1;
     }
 
-    .recommendation-exit-left {
-        animation: slideOutToLeft 0.5s forwards;
-    }
-
-    .recommendation-enter-right {
-        animation: slideInFromRight 0.5s forwards;
-    }
-
-    .recommendation-exit-right {
-        animation: slideOutToRight 0.5s forwards;
-    }
-
-    @keyframes slideInFromLeft {
-        from {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes slideOutToLeft {
-        from {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        to {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-    }
-
-    @keyframes slideInFromRight {
-        from {
-            opacity: 0;
-            transform: translateX(100%);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes slideOutToRight {
-        from {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        to {
-            opacity: 0;
-            transform: translateX(100%);
-        }
+    .recommendation-header {
+        margin-bottom: 4px;
     }
 
     .recommendation-avatar {
-        width: 80px; /* Smaller avatar size for mobile */
-        height: 80px; /* Smaller avatar size for mobile */
-        margin-right: 10px; /* Adjust margin for better spacing on mobile */
-        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
     }
 
     .recommendation h2 {
-        font-size: 18px; /* Adjust font size for mobile */
-        display: flex;
-        align-items: center;
+        font-size: 16px;
     }
 
     .recommendation h3 {
-        font-size: 16px; /* Adjust font size for mobile */
+        font-size: 14px;
     }
 
     .recommendation-date {
-        font-size: 12px; /* Adjust font size for mobile */
-        margin-bottom: -10px;
+        font-size: 12px;
     }
 
     .recommendation-quote {
-        font-size: 14px; /* Adjust font size for mobile */        
+        font-size: 14px;
     }
 
-    .recommendations-panel {
-        padding: 8px; /* Adjust padding for mobile */
+    .recommendation-dots .dot {
+        width: 8px;
+        height: 8px;
     }
+}
 
-    .dot {
-        height: 10px; /* Adjust dot size for mobile */
-        width: 10px; /* Adjust dot size for mobile */
-    }
 
-    .recommendation {
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: opacity 0.5s ease;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .recommendation.active {
-        opacity: 1;
-        position: relative;
-        z-index: 2;
-    }
-    
+.recommendations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
