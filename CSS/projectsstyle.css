@@ -7,12 +7,14 @@
 
 /* Body Styling */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: #ffffff;
   color: #100f24;
   margin: 0;
   min-height: 100vh;
 }
+
+
 
 
 /* Main Container Styling */
@@ -96,6 +98,7 @@ h3 {
   padding: 0 30px;
   gap: 0px;
   overflow: visible;    /* ⬅ свой скролл не нужен */
+  font-family: 'Poppins', sans-serif;   /* <-- ВОТ ЭТО добавляем */
 }
 
 
@@ -234,7 +237,7 @@ hr {
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
-    overflow-y: auto; /* Enable vertical scrolling for the container */
+
   }
 
   .media-container,
@@ -275,3 +278,5 @@ hr {
   
 
 }
+
+
