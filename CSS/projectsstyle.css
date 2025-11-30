@@ -276,3 +276,68 @@ hr {
 }
 
 
+/* === Project navigation buttons (prev / next) === */
+
+.media-container .project-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  
+  /* как в старой версии */
+  background-color: #ffffff;      
+  border: none;
+  border-radius: 6px;              /* старое 0.1em ≈ 6px */
+  opacity: 0.6;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: opacity 0.2s ease;
+}
+
+.media-container .project-nav-button:hover {
+  opacity: 1;
+}
+
+/* лево–право */
+.media-container #prev-project.project-nav-button {
+  left: 10px;
+}
+
+.media-container #next-project.project-nav-button {
+  right: 10px;
+}
+
+/* Иконки — ЧЁРНЫЕ (иначе не видно на белом фоне) */
+.media-container .project-nav-button i {
+  font-size: 20px;
+  color: #000000;
+  pointer-events: none;
+}
+
+/* Мобильный */
+@media (max-width: 600px) {
+  .media-container .project-nav-button {
+    top: auto;
+    bottom: 20px;
+    transform: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  .media-container #prev-project.project-nav-button {
+    left: 20px;
+  }
+
+  .media-container #next-project.project-nav-button {
+    right: 20px;
+  }
+}
+
+.media-container .project-nav-button {
+    display: none !important;
+}
