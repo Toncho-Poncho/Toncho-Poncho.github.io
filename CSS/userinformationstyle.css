@@ -120,16 +120,48 @@
   color: #97b34e !important;
 }
 
-/* Аватар справа: не растягиваем, просто квадрат 150×150 */
-.profile-pic {
+/* === AVATAR (2D + 3D) в правой колонке === */
+.user-info-panel .avatar {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   justify-self: center;
-  align-self: center;        /* центр по высоте, не тянем */
+  align-self: center;
 
   width: 150px;
-  height: 150px;             /* фиксированный квадрат */
-  object-fit: cover;
+  height: 150px;
   border-radius: 50%;
+  overflow: hidden;
+  /* без background, чтобы не было чёрного квадрата */
 }
+
+
+
+/* Содержимое аватара */
+.avatar-image,
+.avatar-3d {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* убираем серый постер у model-viewer */
+.avatar-3d {
+  /* убираем серый постер (фон) */
+  --poster-color: transparent;
+
+  /* полностью скрываем progress bar */
+  --progress-bar-color: transparent;
+  --progress-bar-height: 0px;
+}
+
+
+/* Режим: картинка */
+.avatar--image .avatar-image { display: block; }
+.avatar--image .avatar-3d   { display: none; }
+
+/* Режим: 3D */
+.avatar--3d .avatar-image { display: none; }
+.avatar--3d .avatar-3d   { display: block; }
+
 
