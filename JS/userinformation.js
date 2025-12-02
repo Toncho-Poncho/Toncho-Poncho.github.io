@@ -91,7 +91,7 @@ function addUserInformation() {
                         const mouseEl = 90 + (0.5 - percentY) * 40;        // 90 +/- 20
 
                         // вместо резкого перехода — плавное притяжение к позиции мыши
-                        const followSpeed = 0.05; // 0.1–0.2 — комфортно, можно крутить
+                        const followSpeed = 0.1; // 0.1–0.2 — комфортно, можно крутить
 
                         targetAzimuth = targetAzimuth * (1 - followSpeed) + mouseAz * followSpeed;
                         targetElevation = targetElevation * (1 - followSpeed) + mouseEl * followSpeed;
@@ -119,8 +119,8 @@ function addUserInformation() {
 
                         // ЕСЛИ МЫШЬ ДАВНО НЕ ДВИГАЛАСЬ — плавно тянем цели к центру (0, 90)
                         if (idleTime > 1.5) {
-                            targetAzimuth *= 0.985;                             // стремится к 0
-                            targetElevation = 90 + (targetElevation - 90) * 0.985; // к 90
+                            targetAzimuth *= 0.975;                             // стремится к 0
+                            targetElevation = 90 + (targetElevation - 90) * 0.975; // к 90
                         }
 
                         const desiredAz = targetAzimuth + idleAz;
