@@ -37,7 +37,7 @@
 }
 
 .user-name-link:hover {
-  color: #97b34e;
+  color: #03a66b;
 }
 
 /* Ник */
@@ -45,7 +45,8 @@
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 0;
-  color: #97b34e;
+  color: #03a66b;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Остальные подписи */
@@ -117,7 +118,7 @@
 }
 
 .social-icons a:hover {
-  color: #97b34e !important;
+  color: #03a66b !important;
 }
 
 /* === AVATAR (2D + 3D) в правой колонке === */

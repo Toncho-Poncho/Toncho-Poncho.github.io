@@ -44,7 +44,7 @@ html, body {
 
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #ffffff;
+  background-color: #ececec;
   color: #100f24;
   display: flex;
   flex-direction: column;
@@ -122,8 +122,8 @@ h2 {
 }
 
 .nav-button.active, .nav-button:hover {
-  background-color: #ffffff;
-  color: #97b34e;
+  background-color: #ececec;
+  color: #03a66b;
 }
 
 .bottom-container {
@@ -133,7 +133,7 @@ h2 {
   align-items: center;     /* колонка по центру, как и всё остальное */
 
   padding: 0 0 0;
-  background-color: #ffffff;
+  background-color: #ececec;
   border-radius: 5px;
   width: 100%;
   margin-top: 0;
@@ -181,7 +181,7 @@ h2 {
 
   .top-container {
       margin-top: 0px;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid #ececec;
   }
 
   .user-info-panel {
@@ -209,7 +209,7 @@ h2 {
 }
 
   .bottom-container {
-      background-color: #ffffff;
+      background-color: #ececec;
       padding: 0px 0;  /* стало: только сверху/снизу, без слева/справа */
       border-radius: 5px;
   }

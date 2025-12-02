@@ -8,7 +8,7 @@
 
 .production-subpanel {
     padding: 0px;
-    background-color: #ffffff;
+    background-color: #ececec;
     border-radius: 5px;
     width: 100%; /* Adjusts the width to be 80% of the parent container */
     height: auto; /* Adjusts height based on content */
@@ -57,7 +57,7 @@
 
     align-items: flex-start;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #ececec;
 }
 
 
@@ -68,7 +68,7 @@
 .production-subpanel h2 {
     font-size: 16px; /* Font size for the title */
     margin-bottom: 3px; /* Margins for spacing */
-    color: #97B34E; /* Text color */
+    color: #03a66b; /* Text color */
     text-align: left; /* Aligns text to the left */
 }
 

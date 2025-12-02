@@ -19,7 +19,7 @@ html, body {
 
 body {
     font-family: Montserrat, sans-serif;
-    background-color: #ffffff;
+    background-color: #ececec;
     color: #100f24;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ h1 {
     font-size: 20px;
     margin: 0;
     margin-bottom: 5px;
-    color: white;
+    color: #ececec;
     -webkit-user-select: none; /* Safari */
     user-select: none;
     font-weight: 400;
@@ -69,7 +69,7 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     padding-top: 0px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ececec;
 }
 
 hr {
@@ -88,7 +88,7 @@ hr {
 
     padding: 0 30px 0px;
     gap: 10px;
-    background-color: #ffffff;
+    background-color: #ececec;
     border-radius: 5px;
 }
 
@@ -137,8 +137,8 @@ p {
 }
 
 .nav-button.active, .nav-button:hover {
-    background-color: #ffffff;
-    color: #97b34e;
+    background-color: #ececec;
+    color: #03a66b;
 }
 
 @media (max-width: 600px) {
@@ -148,7 +148,7 @@ p {
 
     .top-container {
         padding-top: 0px;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #ececec;
     }
 
     .bottom-container {
