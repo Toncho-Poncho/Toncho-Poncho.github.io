@@ -1,0 +1,10 @@
+Lava, Ice & Wood
+---
+A set of stylized hand-painted props exploring different materials and visual moods.
+The project includes a molten lava stone, an ice core covered in snow, and a wooden beam — each painted entirely by hand without procedural textures. The focus was on shape readability, color harmony, and creating convincing material definition through painted lighting and form.
+---
+Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag
+---
+/Projects/Lava, Ice & Wood/Img/All3.jpg
+---
+Lava, Ice & Wood.html

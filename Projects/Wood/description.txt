@@ -1,9 +1,0 @@
-Wood
----
-A surreal dive into a synthetic abyss, this series visualizes a vast digital ocean built from light and geometry—where depth feels infinite, structures drift like currents, and the familiar laws of nature dissolve into abstract motion.
----
-Blender, Photoshop
----
-/Projects/Wood/Img/All3.jpg
----
-Wood.html

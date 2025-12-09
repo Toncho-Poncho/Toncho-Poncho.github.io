@@ -1,0 +1,19 @@
+/Img/Lava1.jpg
+Creating the lava texture helped me practice painting strong contrast, defining emissive areas by hand, and conveying molten flow and heat through color gradients and soft transitions.
+
+/Img/Lava2.jpg
+
+/Img/Lava3.jpg
+
+/Img/Snow1.jpg
+Working on the ice and snow texture allowed me to explore painting translucency, layering soft and hard shapes, and creating depth inside a stylized frozen material without relying on transparency.
+
+/Img/Snow2.jpg
+
+/Img/Snow3.jpg
+
+/Img/Wood1.jpg
+Painting the wood texture taught me how to build form through subtle value shifts, render organic surface details, and create a warm stylized material with clean readability.
+
+/Img/Wood2.jpg
+
