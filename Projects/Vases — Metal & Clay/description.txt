@@ -1,0 +1,11 @@
+Vases — Metal & Clay
+---
+A set of stylized hand-painted vases focused on contrasting materials and surface qualities.
+The project explores the difference between a magical metallic vessel and a clay pot, with emphasis on shape readability, material separation, and conveying surface properties through hand-painted color and lighting.
+
+---
+Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag
+---
+/Projects/Vases — Metal & Clay/Img/VasesAll.jpg
+---
+Vases — Metal & Clay.html
