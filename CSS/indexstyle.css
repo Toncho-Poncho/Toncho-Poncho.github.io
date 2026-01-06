@@ -36,9 +36,13 @@ html {
 html, body {
   margin: 0;
   padding: 0;
+
   width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-x: hidden;
+
+  height: auto;
+  min-height: 100%;
+
   box-sizing: border-box;
 }
 
@@ -73,17 +77,10 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex: 1;
-  overflow-y: auto;          /* прокрутка остаётся */
-  scrollbar-width: none;     /* Firefox — скрыть полосу */
-  -ms-overflow-style: none;  /* старый IE/Edge — скрыть полосу */
 }
 
-/* Скрыть полосу прокрутки у .main-container, но оставить скролл */
-.main-container::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
+
+
 
 .top-container {
   display: flex;

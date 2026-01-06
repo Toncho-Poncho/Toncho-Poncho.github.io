@@ -26,28 +26,28 @@
 }
 
 .thumbnail {
-  border-radius: 1em;
-  overflow: hidden;
   position: relative;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.3s;
-  background-color: #ececec;
   width: 100%;
   aspect-ratio: 4 / 3;
-  padding-top: 0;
-/* box-shadow: 0px 15px 30px #dbb9a0; */
-  transform-origin: center;
 
+  border-radius: 1em;
+  overflow: hidden;
+  cursor: pointer;
+
+  background-color: #ececec;
+
+  /* hover / animation */
+  transform-origin: center;
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.3s;
+
+  opacity: 1;
+
+  /* тень (оставляем, т.к. она часть визуала)*/ 
+  /* box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4); */
 }
 
-
-.thumbnail {
-  position: relative;
-  transition: transform 0.5s ease-out;
-  transform-origin: center;
-
-}
 
 
 .thumbnail:hover {
@@ -188,4 +188,10 @@
 
 
 
+/* Smooth hover only on desktop/laptop (prevents mobile scroll flicker) */
+@media (hover: hover) and (pointer: fine) {
+  .thumbnail {
+    will-change: transform;
+  }
+}
 
