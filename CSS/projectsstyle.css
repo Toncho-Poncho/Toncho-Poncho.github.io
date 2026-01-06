@@ -179,9 +179,14 @@ h3 {
 
 
 #project-media video {
+  display: block;
   width: 100%;
   height: auto;
+  border-radius: 15px;   /* как у img */
+  object-fit: cover;
+  pointer-events: none;  /* чтобы тап не включал плеер */
 }
+
 
 hr {
   opacity: .05;

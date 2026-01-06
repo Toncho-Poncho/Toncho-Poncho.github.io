@@ -229,20 +229,33 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const createVideoElement = (url) => {
-        const mediaElement = document.createElement('div');
-        mediaElement.className = 'media-item';
+    const mediaElement = document.createElement('div');
+    mediaElement.className = 'media-item';
 
-        const videoElement = document.createElement('video');
-        videoElement.src = url;
-        videoElement.controls = true;
-        videoElement.autoplay = true;
-        videoElement.loop = true;
-        videoElement.muted = true;
-        videoElement.title = 'Video content';
+    const videoElement = document.createElement('video');
+    videoElement.src = url;
 
-        mediaElement.appendChild(videoElement);
-        return mediaElement;
+    // ✅ как GIF
+    videoElement.autoplay = true;
+    videoElement.loop = true;
+    videoElement.muted = true;
+
+    // ✅ важно для мобилок (без fullscreen)
+    videoElement.playsInline = true;
+    videoElement.setAttribute('playsinline', '');
+    videoElement.setAttribute('webkit-playsinline', '');
+
+    // ✅ убираем плеер
+    videoElement.controls = false;
+    videoElement.removeAttribute('controls');
+
+    // ✅ опционально
+    videoElement.preload = 'metadata';
+
+    mediaElement.appendChild(videoElement);
+    return mediaElement;
     };
+
 
     const createYouTubeElement = (url) => {
         const mediaElement = document.createElement('div');
