@@ -1,0 +1,10 @@
+Elf Portrait
+---
+A stylized female elf character bust focused on clean shapes, facial proportions, and hand-painted materials.
+The project explores stylized anatomy, hair volume, and soft skin rendering, with emphasis on readable forms, balanced color palette, and a cohesive fantasy look.
+---
+Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag
+---
+/Projects/Elf Portrait/Img/GirlThumb.jpg
+---
+Elf Portrait.html
