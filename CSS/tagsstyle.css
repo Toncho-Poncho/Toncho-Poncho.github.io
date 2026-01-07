@@ -2,7 +2,7 @@
 .project-tags-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 1px 20px;
   padding-left: 0px;
   padding-bottom: 0px;
   padding-top: 3px;
