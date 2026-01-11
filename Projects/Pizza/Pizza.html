@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="../../CSS/indexstyle.css?v=1.0" />
+    <link rel="stylesheet" href="../../CSS/userinformationstyle.css?v=1.0" />
+    <link rel="stylesheet" href="../../CSS/main.css" />
+    <link rel="icon" href="../../Resources/favicon/KolosFavicon.png" type="image/png" />
+
+    <!-- model-viewer для 3D-аватара -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
+  </head>
+  <body>
+
+    <div class="top-container">
+      <div class="user-info-panel">
+        <!-- Сюда userinformation.js подставит текст и аватар -->
+
+        <div class="navigation-buttons">
+          <a href="../../index.html" class="nav-button" id="nav-portfolio">Portfolio</a>
+          <a href="../../about.html" class="nav-button" id="nav-about">About</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="info-container">
+        <div class="project-description-container">
+          <h1 id="project-title"></h1>
+          <p id="project-description"></p>
+        </div>
+
+
+
+        <h3>Software Used</h3>
+        <div class="project-tags-container" id="project-tags"></div>
+
+
+
+        <div class="project-stats-container" id="project-stats"></div>
+      </div>
+
+      <div class="media-container">
+        <div id="project-media"></div>
+
+      <button id="prev-project" class="project-nav-button" type="button" aria-label="Previous Project">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button id="next-project" class="project-nav-button" type="button" aria-label="Next Project">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <button id="back-to-top" class="back-to-top-button" type="button" aria-label="back to the top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      </div>
+
+    </div>
+
+    <script src="../../JS/userinformation.js"></script>
+    <script src="../../JS/projects.js"></script>
+
+  </body>
+</html>

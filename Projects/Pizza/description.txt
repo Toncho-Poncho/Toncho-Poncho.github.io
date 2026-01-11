@@ -1,0 +1,11 @@
+Pizza
+---
+A stylized pizza prop created using a full asset pipeline, including modeling, sculpting in ZBrush, retopology, baking, and hand-painted texturing.
+The focus was on clean shapes, appealing stylized forms, and creating a readable, game-ready asset.
+
+---
+Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag, Blender, ZBrush
+---
+/Projects/Pizza/Img/PizzaThumb.jpg
+---
+Pizza.html

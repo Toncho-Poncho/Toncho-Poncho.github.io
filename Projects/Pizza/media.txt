@@ -1,0 +1,10 @@
+/Img/Pizza1.jpg
+Final game-ready asset showcasing hand-painted textures, material definition, and stylized surface transitions.
+
+/Img/Pizza2.jpg
+Low poly mesh with baked details, followed by base color pass and the final hand-painted textured asset.
+
+/Img/Pizza3.mp4
+Turnaround view highlighting the silhouette, proportions, and overall readability of the asset from all angles.
+
+/Img/Pizza4.jpg
