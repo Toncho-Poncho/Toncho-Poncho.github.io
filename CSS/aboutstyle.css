@@ -115,6 +115,11 @@ p {
     text-align: left;
 }
 
+.corefocus-panel p {
+    text-align: left;
+}
+
+
 .navigation-buttons {
     display: flex;
     gap: 1rem;

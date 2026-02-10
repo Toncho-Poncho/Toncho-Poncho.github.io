@@ -21,11 +21,11 @@ function addUserInformation() {
             // путь к 3D модели в зависимости от того, где мы находимся
             let modelPath = '';
             if (window.location.pathname.includes('/Projects/')) {
-                modelPath = '../../Resources/Models/Plush.glb';
+                modelPath = '../../Resources/Models/TonyaAvatar.glb';
             } else if (window.location.pathname.includes('/HTML/')) {
-                modelPath = '../Resources/Models/Plush.glb';
+                modelPath = '../Resources/Models/TonyaAvatar.glb';
             } else {
-                modelPath = 'Resources/Models/Plush.glb';
+                modelPath = 'Resources/Models/TonyaAvatar.glb';
             }
 
 
@@ -36,7 +36,7 @@ function addUserInformation() {
 
                 // !!! ВЫБЕРИ РЕЖИМ: 
                 // avatar--image = картинка
-                // avatar--3d = 3D Plush.glb
+                // avatar--3d = 3D TonyaAvatar.glb
                 avatarContainer.className = "avatar avatar--3d";
 
                 avatarContainer.innerHTML = `
@@ -87,8 +87,8 @@ function addUserInformation() {
                         const percentY = e.clientY / window.innerHeight;   // 0 → 1
 
                         // целевые углы на основе позиции мыши
-                        const mouseAz = (0.5 - percentX) * 40;             // -20...+20
-                        const mouseEl = 90 + (0.5 - percentY) * 40;        // 90 +/- 20
+                        const mouseAz = (0.5 - percentX) * 75;             // -20...+20
+                        const mouseEl = 90 + (0.5 - percentY) * 75;        // 90 +/- 20
 
                         // вместо резкого перехода — плавное притяжение к позиции мыши
                         const followSpeed = 0.1; // 0.1–0.2 — комфортно, можно крутить

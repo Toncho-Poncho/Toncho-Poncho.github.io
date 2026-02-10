@@ -1,5 +1,39 @@
 // Function to create a thumbnail with overlay icons
 let gradientIndex = 0; // Глобальный счётчик для градиентов
+
+// Touch devices don't have :hover. We emulate it: first tap = hover, second tap = open.
+const IS_TOUCH_DEVICE = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
+let didScrollGesture = false;
+let startX = 0;
+let startY = 0;
+let lastScrollTS = 0;
+let tapStartTS = 0;
+
+function clearTouchHover(exceptEl = null) {
+  document.querySelectorAll(".thumbnail.is-hovered").forEach((el) => {
+    if (el !== exceptEl) el.classList.remove("is-hovered");
+  });
+}
+
+if (IS_TOUCH_DEVICE) {
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".thumbnail-link")) clearTouchHover();
+  });
+
+  // Scroll doesn't bubble, so capture:true
+  document.addEventListener(
+    "scroll",
+    () => {
+      lastScrollTS = Date.now();
+      didScrollGesture = true;
+      clearTouchHover();
+    },
+    { passive: true, capture: true }
+  );
+}
+
+
 function createThumbnail(src, alt, galleryPageUrl, hasMultipleImages, hasVideo, hasYouTube, hasSketchfab, isLarge) {
     const thumbnailLink = document.createElement("a");
 thumbnailLink.href = galleryPageUrl;
@@ -75,6 +109,75 @@ if (isLarge) {
     thumbnailDiv.appendChild(thumbnailImg);
     thumbnailDiv.appendChild(thumbnailTitle);
     thumbnailLink.appendChild(thumbnailDiv);
+
+    // Touch-friendly "double tap" behavior:
+    // 1st tap shows hover state, 2nd tap opens the link
+    if (IS_TOUCH_DEVICE) {
+    // Disable normal click on touch so it doesn't fight with touchend logic
+    thumbnailLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    thumbnailLink.addEventListener(
+        "touchstart",
+        (e) => {
+        if (!e.touches || e.touches.length !== 1) return;
+
+        didScrollGesture = false;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        tapStartTS = Date.now();
+        },
+        { passive: true }
+    );
+
+    thumbnailLink.addEventListener(
+        "touchmove",
+        (e) => {
+        if (!e.touches || e.touches.length !== 1) return;
+
+        const dx = Math.abs(e.touches[0].clientX - startX);
+        const dy = Math.abs(e.touches[0].clientY - startY);
+
+        // Any noticeable movement = scroll/swipe, not a tap
+        if (dx > 2 || dy > 2) {
+            didScrollGesture = true;
+            lastScrollTS = Date.now();
+            clearTouchHover();
+        }
+        },
+        { passive: true }
+    );
+
+    thumbnailLink.addEventListener(
+        "touchend",
+        () => {
+        const dt = Date.now() - tapStartTS;
+
+        // If swipe/scroll happened — do nothing
+        if (didScrollGesture) return;
+
+        // Long press is not a tap
+        if (dt > 500) return;
+
+        const isHovered = thumbnailDiv.classList.contains("is-hovered");
+
+        if (!isHovered) {
+            // 1st tap: enable hover
+            clearTouchHover(thumbnailDiv);
+            thumbnailDiv.classList.add("is-hovered");
+            return;
+        }
+
+        // 2nd tap: open link
+        window.location.href = thumbnailLink.href;
+        didScrollGesture = false;
+        },
+        { passive: true }
+    );
+    }
+
 
     return thumbnailLink;
 }
