@@ -1,0 +1,12 @@
+/Img/Pumpkin1.jpg
+
+/Img/Pumpkin2.mp4
+Turntable presentation highlighting silhouette consistency, proportional balance, and material readability throughout the full rotation in a real-time setup.
+
+/Img/Pumpkin3.jpg
+Low-poly mesh with baked high-poly details, followed by base color pass and final hand-painted texture.
+
+/Img/Pumpkin4.mp4
+Short looping animation showcasing rig setup, weight painting, and deformation testing.
+
+/Img/Pumpkin5.jpg

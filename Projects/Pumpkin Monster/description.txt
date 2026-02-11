@@ -1,0 +1,9 @@
+Pumpkin Monster
+---
+Pumpkin Monster is a stylized character created through a full asset pipeline, including high-poly sculpting in ZBrush, retopology, UVs, baking, hand-painted texturing, and basic rigging with a short looping animation. The project focuses on strong silhouette, expressive forms, clean topology, and maintaining readable stylized materials suitable for real-time use.
+---
+Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag, Blender, ZBrush
+---
+/Projects/Pumpkin Monster/Img/PumpkinThumb.jpg
+---
+Pumpkin Monster.html
