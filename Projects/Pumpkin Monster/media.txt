@@ -1,3 +1,5 @@
+/Img/PumpkinThumb.jpg
+
 /Img/Pumpkin1.jpg
 
 /Img/Pumpkin2.mp4
