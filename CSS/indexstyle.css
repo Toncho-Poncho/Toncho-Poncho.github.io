@@ -47,7 +47,7 @@ html, body {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   background-color: #ececec;
   color: #100f24;
   display: flex;
@@ -71,7 +71,7 @@ h2 {
   font-size: 16px;
   margin: 0;
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   -webkit-user-select: none; /* Safari */
   user-select: none;
@@ -112,7 +112,7 @@ h2 {
   background-color: inherit;
   border: none;
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   text-decoration: none;
   cursor: pointer;
   padding: 10px 0;
@@ -204,7 +204,7 @@ h2 {
 }
 
 .nav-button {
-    font-size: 12px; /* Adjust font size for navigation buttons on mobile */
+    font-size: 14px; /* Adjust font size for navigation buttons on mobile */
     padding: 8px; /* Reduce padding for better fit on mobile */
     border-radius: .5em .5em 0 0; /* Adjust border radius for better look on mobile */
 }

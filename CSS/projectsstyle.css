@@ -13,7 +13,7 @@ html, body {
 
 /* Body Styling */
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   background-color: #ececec;
   color: #100f24;
   margin: 0;
@@ -49,7 +49,7 @@ h1 {
 h2 {
   font-size: 16px;
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
@@ -57,7 +57,7 @@ h2 {
 
 h3 {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 400;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
   padding-left: 0px;
@@ -108,7 +108,7 @@ h3 {
   padding: 0 30px;
   gap: 0px;
   overflow: visible;    /* ⬅ свой скролл не нужен */
-  font-family: 'Poppins', sans-serif;   /* <-- ВОТ ЭТО добавляем */
+  font-family: "Lexend Deca", sans-serif;   /* <-- ВОТ ЭТО добавляем */
 }
 
 
@@ -146,7 +146,7 @@ h3 {
   margin-top: 3px;
   margin-bottom: 12px;
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
@@ -156,7 +156,7 @@ h3 {
   margin-top: 3px;
   color: grey;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 /* Style for the media item container */

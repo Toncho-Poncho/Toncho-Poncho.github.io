@@ -9,7 +9,7 @@ html, body {
 
 .bottom-container,
 .productions-panel {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 
@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-    font-family: Montserrat, sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     background-color: #ececec;
     color: #100f24;
     display: flex;
@@ -56,7 +56,7 @@ h2 {
     font-size: 16px;
     margin: 0;
     color: grey;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     -webkit-user-select: none; /* Safari */
     user-select: none;
@@ -131,7 +131,7 @@ p {
     background-color: inherit;
     border: none;
     color: grey;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     text-decoration: none;
     cursor: pointer;
     padding: 10px;
