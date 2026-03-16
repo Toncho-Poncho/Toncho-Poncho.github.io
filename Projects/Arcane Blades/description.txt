@@ -2,7 +2,7 @@ Arcane Blades
 ---
 Arcane Blades is a pair of fantasy weapon assets designed for real-time rendering. The project explores contrasting themes between a corrupted organic blade and an arcane energy sword, with a focus on silhouette clarity, material readability, and game-ready topology.
 ---
-Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag, Blender, ZBrush, Maya
+Substance Painter, 3DCoat, Photoshop, Marmoset Toolbag, Maya, ZBrush
 ---
 /Projects/Arcane Blades/Img/SwordsThumb.jpg
 ---
