@@ -1,0 +1,23 @@
+/Img/Swords.jpg
+
+/Img/Dragon1.jpg
+Close-up views highlighting sculpted forms, surface transitions, and ornamental details of the corrupted blade.
+
+/Img/Dragon2.jpg
+Low-poly mesh with baked high-poly details, followed by the base color pass and the final hand-painted texture.
+
+/Img/Dragon3.mp4
+Turntable presentation of the corrupted blade showcasing silhouette clarity and material readability in real-time.
+
+/Img/Dragon4.jpg
+
+/Img/Skeleton1.jpg
+Detail views highlighting the arcane blade design, emissive energy elements, and material definition.
+
+/Img/Skeleton2.jpg
+Texture breakdown showing base color pass and the final hand-painted result applied to the weapon.
+
+/Img/Skeleton3.mp4
+Turntable presentation of the arcane blade emphasizing emissive energy effects and overall form consistency.
+
+/Img/Skeleton4.jpg
