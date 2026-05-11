@@ -1,0 +1,9 @@
+Oni
+---
+Oni is a high-poly stylized character project focused on sculpting, visual design, and hand-painted texturing. The project explores strong silhouette language, readable anatomy, material separation, and polished character presentation across both final textured renders and sculpt views.
+---
+ ZBrush, Blender, Photoshop
+---
+/Projects/Oni/Img/Oni0.jpg
+---
+Oni.html
