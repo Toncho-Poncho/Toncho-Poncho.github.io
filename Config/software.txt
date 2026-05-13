@@ -1,10 +1,7 @@
-Blender 
-Adobe Photoshop
-Aseprite
-Adobe Premier Pro
-Unity 
+Zbrush
+Blender
+Maya
 Substance 3D Painter
-Visual Novel Maker
-Krita
-Unreal Engine
-TouchDesigner
+3DCoat
+Adobe Photoshop
+Marmoset Toolbag

@@ -1,12 +1,13 @@
-Visual Storytelling
-Architectural Visualization
-Motion Graphics
-3D Modelling
-Texturing
-Game Development
-UV-Unwrapping
+Stylized 3D Art
+3D Modeling
+Digital Sculpting
+Hand-Painted Texturing
+UV Unwrapping
 Retopology
-Hand-painted Texturing
-Environment Art
-Music Video Production
-3D World Building
+Baking
+Character Art
+Prop Art
+Weapon Art
+Game Assets
+Real-Time Rendering
+Basic Rigging
